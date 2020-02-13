@@ -3,28 +3,29 @@ import React, { Fragment } from "react";
 const cardStyles = {
   background: "white",
   borderRadius: "30px",
-  border: "1px solid #a1a1a1",
+  border: "1px solid #cfcfcf",
   width: "300px",
-  height: "300px",
+  height: "400px",
   cursor: "pointer",
   userSelect: "none",
   position: "absolute",
   display: "flex",
-
   top: 0
 };
 
 const Card = ({ zIndex = 0, card }) => (
   <div
-    className="flex flex-col justify-around items-center"
+    className="flex flex-col justify-start items-center"
     style={{ ...cardStyles, zIndex }}
   >
     {card ? (
       <Fragment>
-        <div className="card-title">{card.title}</div>
+        <div className="card-title font-bold text-4xl pt-5 mb-3 border-b-2 border-gray-600">
+          {card.title}
+        </div>
 
-        <div className="card-body flex flex-col justify-around">
-          <div className="desc font-bold">
+        <div className="card-body flex flex-col justify-around self-start pl-10">
+          <div className="desc font-bold ">
             Class description: <p className="font-normal">{card.desc}</p>
           </div>
           <div className="instructor font-bold">

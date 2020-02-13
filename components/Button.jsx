@@ -1,7 +1,7 @@
 import React from "react";
 
 const buttonStyles = {
-  padding: "20px 23px",
+  padding: "20px 20px",
   background: "white",
   cursor: "pointer",
   border: "8px solid #ededed",

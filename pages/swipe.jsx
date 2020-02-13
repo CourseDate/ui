@@ -16,7 +16,7 @@ const appStyles = {
   overflow: "hidden"
 };
 
-const wrapperStyles = { position: "relative", width: "300px", height: "300px" };
+const wrapperStyles = { position: "relative", width: "300px", height: "400px" };
 const actionsStyles = {
   marginTop: 12
 };
@@ -47,7 +47,6 @@ const Swipe = () => {
         {cards.length > 0 && (
           <div style={wrapperStyles}>
             <Swipeable
-              min="80"
               buttons={({ right, left }) => (
                 <div className="flex justify-center" style={actionsStyles}>
                   <Button onClick={left}>
